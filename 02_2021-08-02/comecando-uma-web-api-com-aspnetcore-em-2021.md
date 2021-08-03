@@ -12,7 +12,7 @@ Caso queiram entender um pouco das motivações por trás do uso do .NET atualme
 
 Mostrando um pouco da minha opinião, curto muito trabalhar com o ambiente .NET por conta do C#, a linguagem é muito boa, expressiva e está evoluindo muito com as novas versões. Outro ponto que acho importante, é que a comunidade é bem ativa, isso é bom pois geralmente conseguimos achar bastante conteúdo para aprender sobre e conseguimos achar resoluções de problemas que outros desenvolvedores já passaram utilzando a linguagem.
 
-Nesse post que mostrar e explicar a estrutura base de uma API na versão 5.0 do ASP .NET Core.
+Nesse post quero mostrar e explicar a estrutura base de uma API na versão 5.0 do ASP .NET Core.
 
 ## Instalação
 
@@ -80,9 +80,9 @@ O método `CreateDefaultBuilder()` já faz algumas configurações relacionadas 
 
 O método `ConfigureWebHostDefaults()` também realiza algumas configurações, mas essas, relacionadas ao Host Web da aplicação:
 
-- Defini o Kestrel como servidor Web padrão. Para quem quiser saber mais sobre o Kestrel, recomendo a [própria documentação da Microsoft](https://docs.microsoft.com/pt-br/aspnet/core/fundamentals/servers/kestrel?view=aspnetcore-5.0).
-- Adicionar alguns middlewares padrões de aplicações Web.
-- Adicionar integração com o IIS.
+- Define o Kestrel como servidor Web padrão. Para quem quiser saber mais sobre o Kestrel, recomendo a [própria documentação da Microsoft](https://docs.microsoft.com/pt-br/aspnet/core/fundamentals/servers/kestrel?view=aspnetcore-5.0).
+- Adiciona alguns middlewares padrões de aplicações Web.
+- Adiciona integração com o IIS.
 
 Uma coisa que podemos notar, é que no corpo do método `ConfigureWebHostDefaults()`, temos a chamada `webBuilder.UseStartup<Startup>()`, é aqui que definimos que a classe Startup será utilizada para configuração dos middlewares e serviços, como citei mais acima no artigo.
 
