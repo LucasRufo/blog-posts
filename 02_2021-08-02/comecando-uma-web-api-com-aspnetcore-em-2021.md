@@ -6,7 +6,7 @@ date: 02-08-2021
 
 # Começando uma API com .NET Core em 2021
 
-Sou entusiasta de algumas tecnologias da Microsoft e o ASP .NET Core é uma delas, atualmente você pode criar diversas aplicações para a Web utilizando o framework, desde APIs a UIs com Blazor. Já trabalho com ASP .NET há cerca de 2 anos, e digo com certeza, **esse é o melhor momento para aprender .NET**, a Microsoft vem fazendo um trabalho incrível com as novas versões do framework e sinto que ele está indo para um caminho bem favorável a comunidade e a nós, desenvolvedores.
+Sou entusiasta de algumas tecnologias da Microsoft e o ASP .NET Core é uma delas, atualmente você pode criar diversas aplicações para a Web utilizando o framework, desde APIs a UIs com Blazor. Já trabalho com ASP .NET há cerca de 2 anos e digo com certeza, **esse é o melhor momento para aprender .NET**, a Microsoft vem fazendo um trabalho incrível com as novas versões do framework e sinto que ele está indo para um caminho bem favorável para a comunidade e para nós, desenvolvedores.
 
 Caso queiram entender um pouco das motivações por trás do uso do .NET atualmente, tem um ótimo post do [André Baltieri](https://www.youtube.com/channel/UCgnACLvM9O5lfm9ZBh_d3cg) explicando porque aprender .NET ainda em 2021: [Link do post](https://balta.io/blog/microsoft-net-5-motivos-para-aprender-ainda-em-2021).
 
@@ -59,7 +59,7 @@ Essa deve ser sua visualização no Explorer do Visual Studio Code:
 - `Controllers`, como o nome já diz, é a pasta que mantém nossas Controllers. Contém uma controller chamada `WeatherForecastController.cs` que foi gerada junto com o template, podemos deletar esse arquivo por agora.
 - `Properties` é a pasta que contem o `launchSettings.json`, arquivo de configuração de como nossa aplicação deve inicializar
 - `appsettings.json` e `appsettings.Development.json` são os nossos arquivos de configuração, que também podem ser criados por ambiente, como por exemplo: `appsettings.Production.json`.
-- `PrimeiraAPI.csproj` é um arquivo de configuração do projeto .NET, ele contém a versão *target* do framework, descrição e versão de bibliotecas externas e pode ter configurações adicionais.
+- `PrimeiraAPI.csproj` é um arquivo de configuração do projeto .NET, ele contém a versão *target* do framework, descrição e versão de bibliotecas externas. Pode ter configurações adicionais.
 - `Program.cs` principal arquivo de inicialização do projeto. Contém a chamada que inicia nossa aplicação.
 - `Startup.cs` arquivo de configuração da API, então é nele que configuramos middlewares e serviços que nossa API irá utilizar.
 - `WeatherForecast.cs` arquivo de exemplo gerado pelo template da criação do projeto, podemos deletar esse arquivo por agora.
